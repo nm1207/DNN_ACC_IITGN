@@ -81,6 +81,10 @@ module user_project_wrapper #(
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
+wire [`MPRJ_IO_PADS-1:0] io_oeb_user;
+
+assign io_oeb = {38{1'b0}};
+
 
 user_proj_mac mprj (
 `ifdef USE_POWER_PINS
@@ -112,7 +116,7 @@ user_proj_mac mprj (
 
     .io_in ({io_in}),
     .io_out({io_out}),
-    .io_oeb({io_oeb}),
+    .io_oeb(io_oeb_user),
 
     // IRQ
     .irq(user_irq),
