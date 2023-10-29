@@ -89,9 +89,11 @@ jobs:
 
       - name: Harden using Openlane
         run: |
-          #make user_proj_mac
+          make user_proj_top_DNNAcc
+	  echo 'make user_proj_top_DNNAcc is done'
+	  make user_project_wrapper
           echo 'make user_project_wrapper is done'
-          #make user_project_wrapper
+          
 
       - name: run precheck
         run: |
