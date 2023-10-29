@@ -81,12 +81,12 @@ module user_project_wrapper #(
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
-wire [`MPRJ_IO_PADS-1:0] io_oeb_user;
+//wire [`MPRJ_IO_PADS-1:0] io_oeb_user;
 
-assign io_oeb = {38{1'b0}};
+//assign io_oeb = {38{1'b0}};
 
 
-user_proj_mac mprj (
+user_proj_top_DNNAcc mprj (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),	// User area 1 1.8V power
 	.vssd1(vssd1),	// User area 1 digital ground
@@ -116,7 +116,7 @@ user_proj_mac mprj (
 
     .io_in ({io_in}),
     .io_out({io_out}),
-    .io_oeb(io_oeb_user),
+    .io_oeb(io_oeb),
 
     // IRQ
     .irq(user_irq),

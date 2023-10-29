@@ -12,16 +12,16 @@
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [
-        "dir::../../verilog/gl/user_proj_mac.v"
+        "dir::../../verilog/gl/user_proj_top_DNNAcc.v"
     ],
-    "EXTRA_LEFS": "dir::../../lef/user_proj_mac.lef",
-    "EXTRA_GDS_FILES": "dir::../../gds/user_proj_mac.gds",
-    "EXTRA_LIBS": "dir::../../lib/user_proj_mac.lib",
+    "EXTRA_LEFS": "dir::../../lef/user_proj_top_DNNAcc.lef",
+    "EXTRA_GDS_FILES": "dir::../../gds/user_proj_top_DNNAcc.gds",
+    "EXTRA_LIBS": "dir::../../lib/user_proj_top_DNNAcc.lib",
     "EXTRA_SPEFS": [
-        "user_proj_mac", 
-        "dir::../../spef/multicorner/user_proj_mac.min.spef", 
-        "dir::../../spef/multicorner/user_proj_mac.nom.spef", 
-        "dir::../../spef/multicorner/user_proj_mac.max.spef"
+        "user_proj_top_DNNAcc", 
+        "dir::../../spef/multicorner/user_proj_top_DNNAcc.min.spef", 
+        "dir::../../spef/multicorner/user_proj_top_DNNAcc.nom.spef", 
+        "dir::../../spef/multicorner/user_proj_top_DNNAcc.max.spef"
     ],
     "BASE_SDC_FILE": "dir::base_user_project_wrapper.sdc",
     "IO_SYNC": 0,

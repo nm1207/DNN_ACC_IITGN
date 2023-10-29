@@ -143,7 +143,9 @@ assign la_data_out =user_clock2? la_oenb:{wbs_adr, wbs_dat, wbs_dat, wbs_dat};
 
 assign data_in ={la_data_in,la_data_in};
 
-mac Mac_unit( .data_in(data_in), .clk(clk),.reset(rst), .data_out(data_out));
+
+
+// mac Mac_unit( .data_in(data_in), .clk(clk),.reset(rst), .data_out(data_out));
 
 endmodule
 
