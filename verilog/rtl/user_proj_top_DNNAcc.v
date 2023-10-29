@@ -81,15 +81,15 @@ wire TxD;  // wire transmitting data line
 
 
 
-wire logic [7:0] RxData;
-wire logic isNewData;  //changes value 
+wire  [7:0] RxData;
+wire  isNewData;  //changes value 
 wire [1:0] selPE;
 wire sipo_en, sipo_en2, sp_din, sp_load, sp_load2;
 wire ps_load;
 wire selSPMode;
 wire ps_out;
 wire isNewWtin_tap, isNewDin_tap , din_tap, wtin_tap, addrDout_tap, ps_din_tap, sp_din_out_tap, sp_wt_out_tap,clk_i_tap, clk_f_tap, clk_p_tap,dout_tap_i, expOut_tap_p, mantOut_tap_p,expOut_tap_f,mantOut_tap_f, enPE_tap;
-wire logic [1:0] globalState_tap;
+wire [1:0] globalState_tap;
 
 
 wire clk1;
