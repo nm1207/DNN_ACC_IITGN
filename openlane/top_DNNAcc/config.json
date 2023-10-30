@@ -18,7 +18,7 @@
 
         "FP_CORE_UTIL" : 45,
 
-        "CLOCK_PERIOD": 25.0,
+        "CLOCK_PERIOD": 24.0,
 
         "DESIGN_IS_CORE": true
 

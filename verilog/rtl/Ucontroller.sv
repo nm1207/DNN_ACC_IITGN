@@ -81,7 +81,7 @@ input  [47*4-1:0] dout;
 
   reg previousDataState;
   
-  
+  assign globalState_tap = globalState[1:0];
 
 
   always_ff @(posedge clock) begin
